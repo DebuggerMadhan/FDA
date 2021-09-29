@@ -12,31 +12,26 @@
 .hero{
     width: 100%;
     height: 100vh;
-    background: #e75480;
+    background: linear-gradient(to bottom right,white 50%, white 50%);
 }
-.hero .img{
+.hero .logo{
     position: absolute;
-    top:50%;
+    top:10%;
+    left: -1%;
+}
+.hero .side{
+    position: absolute;
     right: 5%;
-    transform: translate(-5%,-50%);
-}
-.hero h1{
-    position: absolute;
-    top:20%;
-    left: 5%;
-    font-size: 6vw;
-    font-family: Cinzel Decorative;
-    color: pink;
-    text-shadow: 0 0 15px #e75480;
+    top:10%;
 }
 .hero p{
     position: absolute;
     top:60%;
     left: 5%;
-    font-family:Cinzel Decorative;
+    font-family:'Open sans';
     width: 100%;
     word-spacing: .5vw;
-    color: pink;
+    color: #ed018b;
     font-weight: 900;
 }
 .hero a{
@@ -45,9 +40,9 @@
     left: 5%;
     text-decoration: none;
     font-family: 'Open sans';
-    color: pink;
+    color: #ed018b;
     padding: 5px 50px 5px 25px;
-    border: 2px solid pink;
+    border: 2px solid #ed018b;
     z-index: 2;
     overflow: hidden;
     transition: .15s;
@@ -55,14 +50,25 @@
 }
 .bg{
     padding: 18px 0px 20px 0px;
-    background: pink;
+    background: #ed018b;
     z-index:-1;
     position: absolute;
     top:0;
     right: 0;
     transition: .15s;
 }
-.hero a:hover{color: black;}
+.hero a:hover{color: white;}
 .hero a:hover .bg{
     padding: 18px 0px 20px 180px;
+}
+@keyframes bg{
+    0%{
+        background: linear-gradient(to bottom right,white 50%, pink 50%);
+    }
+    50%{
+        background: linear-gradient(to bottom right,pink 50%, white 50%);
+    }
+    100%{
+        background: linear-gradient(to bottom right,white 50%, pink 50%);
+    }
 }
