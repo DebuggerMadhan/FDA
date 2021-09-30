@@ -7,11 +7,16 @@
     overflow-x: hidden;
     text-decoration: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 .navbar{
     background-color: white;
-    box-shadow: 0 0 10px pink;
+    border-bottom: 2px solid #ed018b;
 }
 .navbar-toggler{
+    outline: none;
+    border: none;
     margin: 5px;
 }
 .navbar-toggler:active,
@@ -99,6 +104,9 @@
     margin: 20px;
     overflow: hidden;
 }
+.bold{
+    font-weight: 900;
+}
 .about p{
     text-align: center;
     font-family: 'Open Sans';
@@ -106,16 +114,34 @@
     padding: 50px 5vw 25px 5vw;
     line-height: 40px;
 }
-@keyframes bg{
-    0%{
-        background: linear-gradient(to bottom right, pink,#ed0180);
-    }
-    50%{
-        background: linear-gradient(to bottom right, #ed0180,pink);
-    }
-    100%{
-        background: linear-gradient(to bottom right, pink,#ed0180);
-    }
+.dfda{
+    width: 100%;
+    height:auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+.dfda h1{
+    margin: 40px;
+    overflow: hidden;
+}
+.dfda img{
+    width: 30vw;
+    border-radius: 25%;
+    border:12px ridge pink;
+    box-shadow: 0 0 5px #ed018b;
+}
+.dfda p{
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    padding: 100px 5vw 25px 5vw;
+    line-height: 40px;
 }
 @media(max-width:1000px){
     .hero .side{
@@ -127,6 +153,9 @@
         left: -1%;
         width:35rem
     }
+    .dfda img{
+        width: 50vw;
+    }
 }
 @media(max-width:600px){
     .hero .logo{
@@ -134,5 +163,8 @@
         top: 15%;
         left: -1%;
         width:30rem
+    }
+    .dfda img{
+        width: 60vw;
     }
 }
