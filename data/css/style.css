@@ -49,19 +49,9 @@ html{
     bottom:0%;
     overflow: hidden;
 }
-.hero p{
-    position: absolute;
-    top:65%;
-    left: 5%;
-    font-family:'Open sans';
-    width: 100%;
-    word-spacing: .5vw;
-    color: #ed018b;
-    font-weight: 900;
-}
 .hero a{
     position: absolute;
-    top:75%;
+    top:65%;
     left: 5%;
     text-decoration: none;
     font-family: 'Open sans';
@@ -125,6 +115,7 @@ html{
     padding-top: 40px;
     padding-bottom: 40px;
     overflow: hidden;
+    border-bottom: 2px solid pink;
 }
 .dfda h1{
     margin: 40px;
@@ -142,6 +133,31 @@ html{
     font-weight: 300;
     padding: 100px 5vw 25px 5vw;
     line-height: 40px;
+}
+.gallery{
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    overflow: hidden;
+}
+.gallery h1{
+    margin: 40px;
+    overflow: hidden;
+}
+.gallery p{
+    margin: 40px;
+}
+.gallery .part{
+    border-bottom: 2px solid pink;
+}
+.gallery .part img{
+    margin: 40px;
+    border-radius: 20px;
+}
+.gallery .part h2{
+    margin: 40px;
+    overflow: hidden;
 }
 @media(max-width:1000px){
     .hero .side{
@@ -162,7 +178,7 @@ html{
         position: absolute;
         top: 15%;
         left: -1%;
-        width:30rem
+        width:100vw
     }
     .dfda img{
         width: 60vw;
