@@ -10,6 +10,15 @@
 html{
     scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+    width: 5px;
+    background:white;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#ed018b 50%,#ed018b 50%);
+    border-radius: 300px;
+
+}
 .navbar{
     background-color: white;
     border-bottom: 2px solid #ed018b;
@@ -175,22 +184,74 @@ html{
     margin: 0px;
 }
 .contact{
-    height: 80vh;
     width: 100%;
+    height: auto;
     background: #ed018b5e;
-    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 25%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .contact h1{
-    position: absolute;
-    right: 50%;
     overflow: hidden;
-    margin-top: 140px;
+    margin-top: 130px;
+    float: left;
+    margin-left: 10vw;
+    color: white;
 }
 .contact p{
-    position: absolute;
-    right: 50%;
     overflow: hidden;
     margin-top: 220px;
+}
+.contact form{
+    overflow: hidden;
+    margin-top: 220px;
+}
+.contact form input, .contact form textarea{
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 10q;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+}
+.contact form textarea{
+    width: 90%;
+}
+.contact form .submit{
+    margin-left: 40px;
+    background: white;
+    padding-left: 20px;
+    padding-right: 50px;
+    cursor: pointer;
+}
+.footer{
+    height: auto;
+    padding-top: 20px;padding-bottom: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content:center;
+    display:flex;
+    flex-direction: column;
+    background-color: white
+}
+.footer img{
+    width: 10vw;
+}
+.footer .links{
+    display:inline;
+}
+.footer a {
+    margin: 20px;
+    color: #ed018b;
+    transition:.5s;
+}
+.footer a:hover{
+    text-decoration: none;
+    color: black;
+}
+.footer a svg:hover{
+    fill: #ed018b;
+    transition:.5s;
 }
 @media(max-width:1000px){
     .hero .side{
