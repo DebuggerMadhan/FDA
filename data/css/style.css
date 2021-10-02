@@ -17,17 +17,17 @@ html{
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(#ed018b 50%,#ed018b 50%);
     border-radius: 300px;
-
 }
 .navbar{
     background-color: white;
-    border-bottom: 2px solid #ed018b;
+    border-bottom: .5px solid #ccc;
 }
 .navbar-toggler{
     outline: none;
     border: none;
     margin: 5px;
 }
+.navbar-toggler,
 .navbar-toggler:active,
 .navbar-toggler:focus,
 .navbar-toggler:hover{
@@ -233,9 +233,6 @@ html{
     display:flex;
     flex-direction: column;
     background-color: white
-}
-.footer img{
-    width: 10vw;
 }
 .footer .links{
     display:inline;
