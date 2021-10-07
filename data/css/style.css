@@ -16,7 +16,6 @@ html{
 }
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(#ed018b 50%,#ed018b 50%);
-    border-radius: 300px;
 }
 .navbar{
     background-color: white;
@@ -249,6 +248,29 @@ html{
 .footer a svg:hover{
     fill: #ed018b;
     transition:.5s;
+}
+.doll{
+    animation-name: rise;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes rise{
+    0%{
+        position: absolute;
+        top: 110%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin-left:-150px;
+        width: 75%;
+    }
+    50%{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 75%;
+        transform: translate(-50%,-50%);
+        margin-left:-150px;
+    }
 }
 @media(max-width:1000px){
     .hero .side{
