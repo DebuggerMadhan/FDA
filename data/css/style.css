@@ -54,7 +54,7 @@ html{
 .hero .side{
     position: absolute;
     right: 0%;
-    bottom:0%;
+    bottom:12.5%;
     overflow: hidden;
 }
 .hero a{
@@ -258,7 +258,7 @@ html{
     0%{
         position: absolute;
         top: 110%;
-        left: 50%;
+        left: 60%;
         transform: translate(-50%,-50%);
         margin-left:-150px;
         width: 75%;
@@ -266,10 +266,13 @@ html{
     50%{
         position: absolute;
         top: 50%;
-        left: 50%;
+        left:65%;
         width: 75%;
         transform: translate(-50%,-50%);
         margin-left:-150px;
+    }
+    100%{
+        position: normal;
     }
 }
 @media(max-width:1000px){
